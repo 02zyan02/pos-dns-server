@@ -1,5 +1,5 @@
 # Name of the binary to produce
-BINARY_NAME=server
+BINARY_NAME=POS-DNS-SERVER
 
 # Entry point of your application
 MAIN_PATH=cmd/server/main.go
