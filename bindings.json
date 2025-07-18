@@ -1,0 +1,32 @@
+{
+  "client1": {
+    "company": "companyA",
+    "passkey": "abc123",
+    "client_ip": "",
+    "otp_expiry": "0001-01-01T00:00:00Z"
+  },
+  "client2": {
+    "company": "companyB",
+    "passkey": "abc123",
+    "client_ip": "",
+    "otp_expiry": "0001-01-01T00:00:00Z"
+  },
+  "nic": {
+    "company": "companyNic",
+    "passkey": "",
+    "client_ip": "192.168.0.242",
+    "otp_expiry": "0001-01-01T00:00:00Z"
+  },
+  "subra": {
+    "company": "LQS_Sdn_Bhd",
+    "passkey": "abc123",
+    "client_ip": "192.168.0.242",
+    "otp_expiry": "0001-01-01T00:00:00Z"
+  },
+  "zhengyan": {
+    "company": "CompanyYan",
+    "passkey": "abc123",
+    "client_ip": "",
+    "otp_expiry": "0001-01-01T00:00:00Z"
+  }
+}
