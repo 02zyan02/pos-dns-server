@@ -1,0 +1,19 @@
+# Name of the binary to produce
+BINARY_NAME=server
+
+# Entry point of your application
+MAIN_PATH=cmd/server/main.go
+
+.PHONY: build run clean
+
+# Build the binary
+build:
+	go build -o $(BINARY_NAME) $(MAIN_PATH)
+
+# Run the server
+run:
+	go run $(MAIN_PATH)
+
+# Clean the built binary
+clean:
+	rm -f $(BINARY_NAME)
