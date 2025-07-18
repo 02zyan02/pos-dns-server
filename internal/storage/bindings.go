@@ -11,7 +11,7 @@ import (
 
 var Bindings = map[string]models.Binding{}
 
-const bindingsFile = "bindings.json"
+const bindingsFile = "data/bindings.json"
 
 func LoadBindings() {
 	data, err := ioutil.ReadFile(bindingsFile)

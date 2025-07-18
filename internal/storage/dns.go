@@ -4,14 +4,13 @@ import (
 	"encoding/json"
 	"log"
 	"os"
-	"io/ioutil"
 )
 
 var DNSRegistry = map[string]string{}
-const dnsRegistryFile = "dnsRegistry.json"
+const dnsRegistryFile = "data/dnsRegistry.json"
 
 func LoadDNSRegistry() {
-	data, err := ioutil.ReadFile(dnsRegistryFile)
+	data, err := os.ReadFile(dnsRegistryFile)
 	if err != nil {
 		if os.IsNotExist(err) {
 			log.Println("No dnsRegistry.json found, using empty registry.")
@@ -33,7 +32,7 @@ func SaveDNSRegistry() {
 		return
 	}
 
-	err = ioutil.WriteFile(dnsRegistryFile, data, 0644)
+	err = os.WriteFile(dnsRegistryFile, data, 0644)
 	if err != nil {
 		log.Printf("Failed to write DNS registry file: %v", err)
 	}
